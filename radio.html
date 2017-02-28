@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /* αԪ��*/
+        .checkbox{margin-bottom: 30px;font-weight: 700;display:-webkit-flex;display: flex; width: 50px; -webkit-justify-content: space-between; justify-content: space-between;}
+        .checkBox+label,.radio1+label{width: 16px;height: 16px;border: 1px solid #d9d9d9;display: -webkit-flex;display: flex;}
+        .checkBox:checked+label,.radio1:checked+label{border: 1px solid red;font-weight: 700;}
+        .checkBox:checked+label::after,.radio1:checked+label::after{margin: auto;content: '\2714';color:red;width: 8px;height: 8px;line-height: 8px;text-align: center;font-size: 12px;}
+        input{margin: 0;display: none; }
+        .radio{display:-webkit-flex;display: flex; width: 50px; -webkit-justify-content: space-between; justify-content: space-between;}
+        .radio1+label{border-radius: 50%;}
+        .radio1:checked+label::after{border-radius: 50%;width: 8px;height: 8px;line-height: 8px;content: ' ';background: red;}
+        /*ͼƬ*/
+        .checkBox2+label,.radio2+label{width: 16px;height: 16px;border: none;display: inline-block;background: url("../../static/tmall/button.png") no-repeat;}
+        .checkBox2+label{background-position: -25px -32px;}
+        .radio2+label{background-position: -24px -10px;}
+        .checkBox2:checked+label{background-position: -60px -32px;}
+        .radio2:checked+label{background-position: -59px -10px;}
+    </style>
+</head>
+<body>
+<div id="content">
+    <p>1.αԪ��</p>
+    <div class="radio">
+        <input type="radio" name="Yes" id="radioButton" class="radio1" />
+        <label for="radioButton"></label>
+        <input type="radio" name="Yes" id="radioButton1" class="radio1" checked="checked"/>
+        <label for="radioButton1"></label>
+    </div>
+    <p></p>
+    <div class="checkbox">
+        <input type="checkbox" name="choice" id="checkBox" class="checkBox"/>
+        <label for="checkBox"></label>
+        <input type="checkbox" name="choice" id="checkBox1" class="checkBox" checked="check"/>
+        <label for="checkBox1"></label>
+    </div>
+    <p>2.ͼƬ</p>
+    <div class="radio">
+        <input type="radio" name="No" id="radioButtonPic" class="radio2" />
+        <label for="radioButtonPic"></label>
+        <input type="radio" name="No" id="radioButtonPic1" class="radio2" checked="checked"/>
+        <label for="radioButtonPic1"></label>
+    </div>
+    <p></p>
+    <div class="checkbox">
+        <input type="checkbox" name="choice" id="checkBoxPic" class="checkBox2"/>
+        <label for="checkBoxPic"></label>
+        <input type="checkbox" name="choice" id="checkBoxPic1" class="checkBox2" checked="checked"/>
+        <label for="checkBoxPic1"></label>
+    </div>
+</div>
+</body>
+</html>
